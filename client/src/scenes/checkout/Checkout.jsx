@@ -11,7 +11,6 @@ import { loadStripe } from "@stripe/stripe-js";
 const stripePromise = loadStripe(
   "pk_test_51MGUYTDOr8Rh3rU0YILDh1nI7eT4UcDM2nSQQTBzjTjskiIgcrcuYWYFht2m9DdJafjoqKSiQ1ntUwmOfFZyI9ES00egSWRnOb"
 );
-
 const Checkout = () => {
   const [activeStep, setActiveStep] = useState(0);
   const cart = useSelector((state) => state.cart.cart);
@@ -135,7 +134,7 @@ const Checkout = () => {
                     padding: "15px 40px",
                   }}
                 >
-                  {!isFirstStep ? "Next" : "Place Order"}
+                  {!isSecondStep ? "Next" : "Place Order"}
                 </Button>
               </Box>
             </form>
