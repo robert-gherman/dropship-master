@@ -4,7 +4,8 @@
   "info": {
     "singularName": "item",
     "pluralName": "items",
-    "displayName": "item"
+    "displayName": "Item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

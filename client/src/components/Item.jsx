@@ -79,9 +79,11 @@ const Item = ({ item, width }) => {
 
       <Box mt="3px">
         <Typography variant="subtitle2" color={neutral.dark}>
-          {category
-            .replace(/([A-Z])/g, " $1")
-            .replace(/^./, (str) => str.toUpperCase())}
+          {category === "topRated"
+            ? "Top Rated"
+            : category === "newArrivals"
+            ? "New Arrivals"
+            : "Best Sellers"}
         </Typography>
         <Typography>{name}</Typography>
         <Typography fontWeight="bold">${price}</Typography>
